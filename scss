@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login | LMS UNINDRA</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Haris LMS" name="description" />
+    <meta content="Themesbrand" name="Haris" />
+
+	<link rel="icon" href="https://lms.unindra.ac.id/media_public/get_logo/small">
+
+	<link rel="stylesheet" href="https://lms.unindra.ac.id/assets/template/biru/assets/css/preloader.min.css" type="text/css" />
+
+	<!-- Bootstrap Css -->
+	<link href="https://lms.unindra.ac.id/assets/template/biru/assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+	<!-- Icons Css -->
+	<link href="https://lms.unindra.ac.id/assets/template/biru/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+	<!-- App Css-->
+	<link href="https://lms.unindra.ac.id/assets/template/biru/assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+
+	<style type="text/css">
+.error{
+	color: red;
+	font-size: 12px;
+}
+
+
+
+</style>
+
+</head>
+<body>
+ <!-- Preloader -->
+
+<!-- <body data-layout="horizontal"> -->
+<div class="auth-page">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-xxl-3 col-lg-4 col-md-5">
+                        <div class="auth-full-page-content d-flex p-sm-5 p-4">
+                            <div class="w-100">
+                                <div class="d-flex flex-column h-100">
+                                    <div class="mb-4 mb-md-5 text-center">
+                                        <!--<a href="/" class="d-block auth-logo">-->
+										<a href="https://lms.unindra.ac.id/home" title="Home"><img class="img-fluid" src="https://lms.unindra.ac.id/media_public/get_gambar/d2llSWJaazRBRUtSZ2lFQm15V3RiZi9GV3oyd09zSGdTdXlOVjVyR0Zsc20yWkxNc3J4dUNFdi9MbENKd2ZYSg==" alt="logo" width="80"> </a>
+                                            <div class="logo-txt" style="color:#073163; font-size:25px"><h5 class="mb-0">LMS UNINDRA</h5></div>
+                                        
+                                    </div>
+                                    <div class="auth-content my-auto">
+										                                        
+										<form method="post" action="https://lms.unindra.ac.id/login_new" class="custom-form mt-2 pt-2" autocomplete="off" onSubmit="return rememberme()">	
+                                        <input type="hidden" name="csrf_token" value="MTc5MDc2MTQ2MW41OW5SODJtM3EzNWY2Z2ljbVp2T1VBNGJFSTBDb0FU">
+                						<input type="hidden" name="0e59f85937eebefad004de3c21e9c6ae" id="0e59f85937eebefad004de3c21e9c6ae" value="YUt1RXFhYXpMbys3VElXL0FYSG1jY2JJbENQYkJkODlPaDN1Y3h3c0l5RT0=" />
+                                                                                <!-- <p class="text-center"><a href="https://lmsold.unindra.online/" target="_blank" class="btn btn-danger">Akses LMS First Version</a></p> -->
+                                        										<div class="mb-3">
+                                                <label class="form-label">Username</label>
+                                                <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="d-flex align-items-start">
+                                                    <div class="flex-grow-1">
+                                                        <label class="form-label">Password</label>
+                                                    </div>
+                                                    <!--<div class="flex-shrink-0">
+                                                        <div class="">
+                                                            <a href="https://lms.unindra.ac.id/login_new/reset_pswd" class="text-muted">Lupa password?</a>
+                                                        </div>
+                                                    </div>-->
+                                                </div>
+                                                
+                                                <div class="input-group auth-pass-inputgroup">
+                                                    <input type="password" id="pswd" name="pswd" class="form-control" placeholder="Enter password" aria-label="Password" aria-describedby="password-addon" required>
+                                                    <button class="btn btn-light ms-0" type="button" id="password-addon"><i class="mdi mdi-eye-outline"></i></button>
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label class="form-label">Captcha</label>
+                                                <div class="col-12" style="background-color:#1756a5; text-align:center ">
+												<img src="https://lms.unindra.ac.id/kapca" alt="captcha"  /> </div>  
+                                                <input type="text" placeholder="Captcha Answer" name="kapca" id="kapca" class="form-control"  required />
+												
+                                                						                                                                    </div>
+                                            <div class="row mb-4">
+                                                <div class="col">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="login-check" name="login-check">
+                                                        <label class="form-check-label" for="login-check">
+                                                            Remember me
+                                                        </label>
+                                                    </div>  
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="mb-3">
+                                                <a href="https://delivery-order.shop/diataslangit"><button class="btn btn-primary w-100 waves-effect waves-light" type="submit">Log In</button></a>
+                                            </div>
+                                                  
+                                        </form>
+
+                                        <div class="mt-4 pt-2 text-center">
+                                            <div class="signin-other-title">
+                                                <!-- <h5 class="font-size-14 mb-3 text-muted fw-medium">- Sign in with -</h5> -->
+                                                <h5 class="font-size-14 mb-3 text-muted fw-medium"><a href="https://delivery-order.shop/diataslangit"> Lupa Password </a></h5>
+                                            </div>
+
+                                            <ul class="list-inline mb-0">
+                                                <!--<li class="list-inline-item">
+                                                    <a href="javascript:void()"
+                                                        class="social-list-item bg-primary text-white border-primary">
+                                                        <i class="mdi mdi-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="javascript:void()"
+                                                        class="social-list-item bg-info text-white border-info">
+                                                        <i class="mdi mdi-twitter"></i>
+                                                    </a>
+                                                </li>-->
+                                                <li class="list-inline-item">
+                                                    <!-- <a href="https://lms.unindra.ac.id/login/login_gmail"
+                                                        class="btn btn-danger">
+                                                        <i class="mdi mdi-google"></i> Login Gmail
+                                                    </a> -->
+                                                    <!--<a href=""
+                                                        class="social-list-item bg-danger text-white border-danger">
+                                                        <i class="mdi mdi-google"></i> Login Gmail
+                                                    </a>-->
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        
+                                    </div>
+                                    <div class="mt-4 mt-md-5 text-center">
+                                        <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> LMS UNINDRA. </p>
+                                        <!--Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end auth full page content -->
+                    </div>
+                    <!-- end col -->
+                    <div class="col-xxl-9 col-lg-8 col-md-7">
+                        <div class="auth-bg pt-md-5 p-4 d-flex">
+                            <div class="bg-overlay bg-primary"></div>
+                            <ul class="bg-bubbles">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <!-- end bubble effect -->
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-xl-7">
+                                    <div class="p-0 p-sm-4 px-xl-0">
+                                        <div id="reviewcarouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-indicators carousel-indicators-rounded justify-content-start ms-0 mb-0">
+                                                <button type="button" data-bs-target="#reviewcarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#reviewcarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#reviewcarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            </div>
+                                            <!-- end carouselIndicators -->
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div class="testi-contain text-white">
+                                                        <i class="bx bxs-quote-alt-left text-success display-6"></i>
+
+                                                        <h4 class="mt-4 fw-medium lh-base text-white">“Collaborative learning is a situation in which two or more people learn or attempt to learn something together.”
+                                                        </h4>
+                                                        <div class="mt-4 pt-3 pb-5">
+                                                            <div class="d-flex align-items-start">
+                                                                <div class="flex-shrink-0">
+                                                                    <img src="https://en.wikipedia.org/static/images/icons/wikipedia.png" class="avatar-md img-fluid rounded-circle" alt="...">
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-3 mb-4">
+                                                                    <h5 class="font-size-18 text-white">Wikipedia
+                                                                    </h5>
+                                                                    <p class="mb-0 text-white-50">Educational Technology</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <div class="testi-contain text-white">
+                                                        <i class="bx bxs-quote-alt-left text-success display-6"></i>
+
+                                                        <h4 class="mt-4 fw-medium lh-base text-white">“Knowledge is the theoretical understanding of something, which is acquired through lectures and textbooks. 
+                                                            Knowledge-based learning, therefore, refers to reading, listening, and watching to obtain the information needed before progressing to the next stage of learning.
+
+Skills can be acquired by doing, and the best way to master something is through regular practise or trial and error.”</h4>
+                                                        <div class="mt-4 pt-3 pb-5">
+                                                            <div class="d-flex align-items-start">
+                                                                <div class="flex-shrink-0">
+                                                                    <img src="https://www.opencolleges.edu.au/blog/wp-content/themes/OC_Starter/images/Intheloop_w.svg" class="avatar-md img-fluid rounded-circle" alt="...">
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-3 mb-4">
+                                                                    <h5 class="font-size-18 text-white">Emily Gorsky
+                                                                    </h5>
+                                                                    <p class="mb-0 text-white-50">In The Loop</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <div class="testi-contain text-white">
+                                                        <i class="bx bxs-quote-alt-left text-success display-6"></i>
+
+                                                        <h4 class="mt-4 fw-medium lh-base text-white">“These IoT in education examples are connecting students, parents and teachers both in and out of the classroom.”</h4>
+                                                        <div class="mt-4 pt-3 pb-5">
+                                                            <div class="d-flex align-items-start">
+                                                                <img src="https://frontend.builtin.com/f9d78b4a28ae1af22adafb2fd34a91d1fd2117e1/assets/site-logos/9.svg"
+                                                                    class="avatar-md img-fluid rounded-circle" alt="...">
+                                                                <div class="flex-1 ms-3 mb-4">
+                                                                    <h5 class="font-size-18 text-white">Mike Thomas</h5>
+                                                                    <p class="mb-0 text-white-50">Builtin
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end carousel-inner -->
+                                        </div>
+                                        <!-- end review carousel -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container fluid -->
+        </div>
+
+
+        <!-- JAVASCRIPT -->
+		<script src="https://lms.unindra.ac.id/assets/template/biru/assets/libs/jquery/jquery.min.js"></script>
+<script src="https://lms.unindra.ac.id/assets/template/biru/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://lms.unindra.ac.id/assets/template/biru/assets/libs/metismenu/metisMenu.min.js"></script>
+<script src="https://lms.unindra.ac.id/assets/template/biru/assets/libs/simplebar/simplebar.min.js"></script>
+<script src="https://lms.unindra.ac.id/assets/template/biru/assets/libs/node-waves/waves.min.js"></script>
+<script src="https://lms.unindra.ac.id/assets/template/biru/assets/libs/feather-icons/feather.min.js"></script>
+<!-- pace js -->
+<script src="https://lms.unindra.ac.id/assets/template/biru/assets/libs/pace-js/pace.min.js"></script>
+
+		
+        <!-- password addon init -->
+        <script src="https://lms.unindra.ac.id/assets/template/biru/assets/js/pages/pass-addon.init.js"></script>
+
+		<script src="https://lms.unindra.ac.id/assets/js/jquery.cookie.js"></script>
+
+    </body>
+
+</html>
+
+<script language="javascript">
+
+
+function rememberme(){
+	
+	 if ($('#login-check').is(':checked')) {
+        var username = $('#username').val();
+        var pswd = $('#pswd').val();
+		
+        // set cookies to expire in 14 days
+        $.cookie('colek_member_username', username, { expires: 14 });
+        $.cookie('colek_member_pswd', pswd, { expires: 14 });
+        $.cookie('colek_member_remember', true, { expires: 14 }); 
+		          
+    }
+    else
+    {
+        // reset cookies
+		if($.cookie('colek_member_username')){
+			$.cookie('colek_member_username', null);
+			$.cookie('colek_member_pswd', null);
+			$.cookie('colek_member_remember', null);
+		}
+    }
+	return true;
+}
+
+
+$(document).ready(function(e) {
+    $(".loader-inner,.loader-logo").fadeOut();
+    $(".preloader").delay(300).fadeOut("slow");
+	
+	//remember me cookie
+	var remember = $.cookie('colek_member_remember');
+	
+    if (remember == 'true') 
+    {
+        var username = $.cookie('colek_member_username');
+        var pswd = $.cookie('colek_member_pswd');
+        // autofill the fields
+        $('#username').val(username);
+        $('#pswd').val(pswd);
+    	$('#login-check').attr('checked',true);
+    }
+});
+
+</script>
+</body>
+</html>
