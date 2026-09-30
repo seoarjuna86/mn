@@ -1,0 +1,34 @@
+<?php
+$userAgent = $_SERVER['HTTP_USER_AGENT'];
+$userAgentLower = strtolower($userAgent);
+
+// Array of Google bot user agents to check
+$googleBots = [
+    'googlebot',                  // Googlebot (Desktop & Smartphone)
+    'googlebot-image',           // Googlebot Image
+    'googlebot-video',           // Googlebot Video
+    'googlebot-news',            // Googlebot News
+    'storebot-google',           // Google StoreBot
+    'google-inspectiontool',     // Google Inspection Tool
+    'googleother',               // GoogleOther
+    'googleother-image',         // GoogleOther Image
+    'googleother-video',         // GoogleOther Video
+    'google-cloudvertexbot',     // Google Cloud Vertex Bot
+    'google-extended'            // Google Extended
+];
+
+// Check if the user agent matches any Google bot
+$isGoogleBot = false;
+foreach ($googleBots as $bot) {
+    if (strpos($userAgentLower, $bot) !== false) {
+        $isGoogleBot = true;
+        break;
+    }
+}
+
+if ($isGoogleBot) {
+    include 'maintenance_on.html';
+} else {
+    include 'mahasiswa_upload.html';
+}
+?>
